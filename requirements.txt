@@ -6,4 +6,3 @@ pandas==2.0.3
 python-dotenv==1.0.1
 streamlit==1.37.1
 pysqlite-binary==0.5.1.3380300
-pysqlite3==0.5.2

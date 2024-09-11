@@ -37,7 +37,7 @@ def cold_email_app(llm, portfolio, clean_text_fn):
         """
         <div style='text-align:center;'>
             <h1>AI-Powered Cold Email Assistant</h1>
-            <p>Generate personalized outreach emails based on job descriptions from web pages.</p>
+            <p style='text-align:center;'>Generate personalized outreach emails based on job descriptions from web pages.</p>
         </div>
         """, unsafe_allow_html=True
     )
@@ -98,5 +98,5 @@ def cold_email_app(llm, portfolio, clean_text_fn):
 if __name__ == "__main__":
     chain = Chain()
     portfolio = Portfolio()
-    st.set_page_config(layout="centered", page_title="AI Cold Email Generator", page_icon="🚀")
+    st.set_page_config(layout="centered", page_title="AI Cold Email Generator")
     cold_email_app(chain, portfolio, clean_text)

@@ -36,7 +36,7 @@ def cold_email_app(llm, portfolio, clean_text_fn):
     st.markdown(
         """
         <div style='text-align:center;'>
-            <h1>🚀 AI-Powered Cold Email Assistant</h1>
+            <h1>AI-Powered Cold Email Assistant</h1>
             <p>Generate personalized outreach emails based on job descriptions from web pages.</p>
         </div>
         """, unsafe_allow_html=True

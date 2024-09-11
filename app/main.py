@@ -27,6 +27,12 @@ def set_custom_css():
             margin-bottom: 15px;
             color: #34495E;
         }
+        .footer {
+            font-size: 14px;
+            color: #7F8C8D;
+            text-align: center;
+            margin-top: 30px;
+        }
         </style>
         """, 
         unsafe_allow_html=True
@@ -94,6 +100,14 @@ def cold_email_app(llm, portfolio, clean_text_fn):
                 st.error(f"⚠️ An error occurred while processing the URL: {e}")
     elif submit_button:
         st.warning("Please enter a valid URL before submitting.")
+
+    st.markdown(
+        """
+        <div class='footer'>
+            Made with ❤️ by <a href="https://mayankbohra.netlify.app/" target="_blank">Mayank</a>
+        </div>
+        """, unsafe_allow_html=True
+    )
 
 if __name__ == "__main__":
     chain = Chain()
